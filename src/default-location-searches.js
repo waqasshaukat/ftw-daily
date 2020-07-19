@@ -9,38 +9,45 @@ const { LatLng, LatLngBounds } = sdkTypes;
 // `predictionPlace` (util.types.place) properties.
 export default [
   {
-    id: 'default-helsinki',
+    id: 'default-lahore',
     predictionPlace: {
-      address: 'Helsinki, Finland',
-      bounds: new LatLngBounds(new LatLng(60.29783, 25.25448), new LatLng(59.92248, 24.78287)),
+      address: 'Lahore, Punjab, Pakistan',
+      bounds: new LatLngBounds(new LatLng(31.63342699, 74.44936752), new LatLng(31.38303071, 74.20732498)),
     },
   },
   {
-    id: 'default-turku',
+    id: 'default-islamabad',
     predictionPlace: {
-      address: 'Turku, Finland',
-      bounds: new LatLngBounds(new LatLng(60.53045, 22.38197), new LatLng(60.33361, 22.06644)),
+      address: 'Islamabad, Islamabad Capital Territory, Pakistan',
+      bounds: new LatLngBounds(new LatLng(33.78461772, 73.21349157), new LatLng(33.55023701, 72.98140539)),
     },
   },
   {
-    id: 'default-tampere',
+    id: 'default-murree',
     predictionPlace: {
-      address: 'Tampere, Finland',
-      bounds: new LatLngBounds(new LatLng(61.83657, 24.11838), new LatLng(61.42728, 23.5422)),
+      address: 'Murree, Punjab, Pakistan',
+      bounds: new LatLngBounds(new LatLng(33.98612729, 73.51116083), new LatLng(33.81170956, 73.33798324)),
     },
   },
   {
-    id: 'default-oulu',
+    id: 'default-naran',
     predictionPlace: {
-      address: 'Oulu, Finland',
-      bounds: new LatLngBounds(new LatLng(65.56434, 26.77069), new LatLng(64.8443, 24.11494)),
+      address: 'Naran, Kaghan valley, KPK, Pakistan',
+      bounds: new LatLngBounds(new LatLng(35.06507457, 73.83380135), new LatLng(34.7203578, 73.48744617)),
     },
   },
   {
-    id: 'default-ruka',
+    id: 'default-karachi',
     predictionPlace: {
-      address: 'Ruka, Finland',
-      bounds: new LatLngBounds(new LatLng(66.16997, 29.16773), new LatLng(66.16095, 29.13572)),
+      address: 'Karachi, Sindh, Pakistan',
+      bounds: new LatLngBounds(new LatLng(25.09107105, 67.31562926), new LatLng(24.69125919, 66.95239379)),
+    },
+  },
+  {
+    id: 'default-quetta',
+    predictionPlace: {
+      address: 'Quetta, Balochistan, Pakistan',
+      bounds: new LatLngBounds(new LatLng(30.23802518, 67.0598072), new LatLng(30.14224211, 66.96848334)),
     },
   },
 ];
