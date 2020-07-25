@@ -115,11 +115,13 @@ const Footer = props => {
                     name="SearchPage"
                     to={{
                       search:
-                        '?address=Helsinki%2C%20Finland&bounds=60.2978389%2C25.254484899999966%2C59.9224887%2C24.782875800000056&origin=60.16985569999999%2C24.93837910000002',
+                        // '?address=Helsinki%2C%20Finland&bounds=60.2978389%2C25.254484899999966%2C59.9224887%2C24.782875800000056&origin=60.16985569999999%2C24.93837910000002',
+                        '?address=Lahore%2C%20Punjab%2C%20Pakistan&bounds=31.63342699%2C74.44936752%2C31.38303071%2C74.20732498'
                     }}
                     className={css.link}
                   >
-                    <FormattedMessage id="Footer.searchHelsinki" />
+                    {/* <FormattedMessage id="Footer.searchLahore" /> */}
+                    <FormattedMessage id="Lahore" />
                   </NamedLink>
                 </li>
                 <li className={css.listItem}>
@@ -127,11 +129,14 @@ const Footer = props => {
                     name="SearchPage"
                     to={{
                       search:
-                        '?address=Turku%2C%20Finland&bounds=60.5304531%2C22.38197820000005%2C60.33361189999999%2C22.066440100000023&origin=60.4518126%2C22.26663020000001',
+                        // '?address=Turku%2C%20Finland&bounds=60.5304531%2C22.38197820000005%2C60.33361189999999%2C22.066440100000023&origin=60.4518126%2C22.26663020000001',
+                        '?address=Islamabad%2C%20Islamabad%20Capital%20Territory%2C%20Pakistan&bounds=33.78461772%2C73.21349157%2C33.55023701%2C72.98140539'
                     }}
                     className={css.link}
                   >
-                    <FormattedMessage id="Footer.searchTurku" />
+                    {/* <FormattedMessage id="Footer.searchTurku" /> */}
+                    <FormattedMessage id="Islamabad" />
+
                   </NamedLink>
                 </li>
                 <li className={css.listItem}>
@@ -139,11 +144,13 @@ const Footer = props => {
                     name="SearchPage"
                     to={{
                       search:
-                        '?address=Tampere%2C%20Finland&bounds=61.83657359999999%2C24.118384099999957%2C61.42728169999999%2C23.542201299999988&origin=61.4977524%2C23.760953500000028',
+                        // '?address=Tampere%2C%20Finland&bounds=61.83657359999999%2C24.118384099999957%2C61.42728169999999%2C23.542201299999988&origin=61.4977524%2C23.760953500000028',
+                        '?address=Murree%2C%20Punjab%2C%20Pakistan&bounds=33.98612729%2C73.51116083%2C33.81170956%2C73.33798324'
                     }}
                     className={css.link}
                   >
-                    <FormattedMessage id="Footer.searchTampere" />
+                    {/* <FormattedMessage id="Footer.searchTampere" /> */}
+                    <FormattedMessage id="Murree" />
                   </NamedLink>
                 </li>
                 <li className={css.listItem}>
@@ -151,11 +158,13 @@ const Footer = props => {
                     name="SearchPage"
                     to={{
                       search:
-                        '?address=Oulu%2C%20Finland&bounds=65.5643426%2C26.770696000000044%2C64.8443082%2C24.114941999999928&origin=65.0120888%2C25.465077199999996',
+                        // '?address=Oulu%2C%20Finland&bounds=65.5643426%2C26.770696000000044%2C64.8443082%2C24.114941999999928&origin=65.0120888%2C25.465077199999996',
+                        '?address=Naran%2C%20Kaghan%20valley%2C%20KPK%2C%20Pakistan&bounds=35.06507457%2C73.83380135%2C34.7203578%2C73.48744617'
                     }}
                     className={css.link}
                   >
-                    <FormattedMessage id="Footer.searchOulu" />
+                    {/* <FormattedMessage id="Footer.searchOulu" /> */}
+                    <FormattedMessage id="Naran" />
                   </NamedLink>
                 </li>
                 <li className={css.listItem}>
@@ -163,11 +172,25 @@ const Footer = props => {
                     name="SearchPage"
                     to={{
                       search:
-                        '?address=Rukatunturi%2C%20Kuusamo%2C%20Finland&bounds=66.1699707%2C29.167735499999935%2C66.1609529%2C29.13572069999998&origin=66.1654622%2C29.151728100000014',
+                        // '?address=Rukatunturi%2C%20Kuusamo%2C%20Finland&bounds=66.1699707%2C29.167735499999935%2C66.1609529%2C29.13572069999998&origin=66.1654622%2C29.151728100000014',
+                        '?address=Karachi%2C%20Sindh%2C%20Pakistan&bounds=25.09107105%2C67.31562926%2C24.69125919%2C66.95239379'
                     }}
                     className={css.link}
                   >
-                    <FormattedMessage id="Footer.searchRuka" />
+                    <FormattedMessage id="Karachi" />
+                  </NamedLink>
+                </li>
+                <li className={css.listItem}>
+                  <NamedLink
+                    name="SearchPage"
+                    to={{
+                      search:
+                        // '?address=Rukatunturi%2C%20Kuusamo%2C%20Finland&bounds=66.1699707%2C29.167735499999935%2C66.1609529%2C29.13572069999998&origin=66.1654622%2C29.151728100000014',
+                        '?address=Quetta%2C%20Balochistan%2C%20Pakistan&bounds=30.23802518%2C67.0598072%2C30.14224211%2C66.96848334'
+                    }}
+                    className={css.link}
+                  >
+                    <FormattedMessage id="Quetta" />
                   </NamedLink>
                 </li>
               </ul>

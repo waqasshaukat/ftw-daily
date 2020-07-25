@@ -58,6 +58,8 @@ import SectionHostMaybe from './SectionHostMaybe';
 import SectionRulesMaybe from './SectionRulesMaybe';
 import SectionMapMaybe from './SectionMapMaybe';
 import css from './ListingPage.css';
+import SectionViewMaybe from './sectionViewMaybe'
+import SectionCapacity from './SectionCapacity';
 
 const MIN_LENGTH_FOR_LONG_WORDS_IN_TITLE = 16;
 
@@ -261,6 +263,12 @@ export class ListingPageComponent extends Component {
 
     const topbar = <TopbarContainer />;
 
+    // following is editted by waqas 
+    const capacityOptions = findOptionsForSelectFilter(
+      'capacity',
+      filterConfig
+    );
+    // end of editted 
     if (showListingError && showListingError.status === 404) {
       // 404 listing not found
 
@@ -379,6 +387,7 @@ export class ListingPageComponent extends Component {
       </NamedLink>
     );
 
+    const viewOptions = findOptionsForSelectFilter('view',filterConfig);
     const amenityOptions = findOptionsForSelectFilter('amenities', filterConfig);
     const categoryOptions = findOptionsForSelectFilter('category', filterConfig);
     const category =
@@ -439,6 +448,7 @@ export class ListingPageComponent extends Component {
                   />
                   <SectionDescriptionMaybe description={description} />
                   <SectionFeaturesMaybe options={amenityOptions} publicData={publicData} />
+                  <SectionCapacity publicData={publicData} options={capacityOptions} />
                   <SectionRulesMaybe publicData={publicData} />
                   <SectionMapMaybe
                     geolocation={geolocation}
@@ -477,6 +487,7 @@ export class ListingPageComponent extends Component {
                   fetchLineItemsInProgress={fetchLineItemsInProgress}
                   fetchLineItemsError={fetchLineItemsError}
                 />
+                <SectionViewMaybe options={viewOptions} publicData={publicData} />
               </div>
             </div>
           </LayoutWrapperMain>
